@@ -25,7 +25,8 @@ var mySwiper = new Swiper('.swiper-container', {
   effect: 'slide',
   updateOnWindowResize: true,
   roundLengths: true,
-  touchMoveStopPropagation: false,
+
+  speed: 400,
   autoplay:{delay: 4000,
     disableOnInteraction: false,
   },
@@ -39,9 +40,6 @@ var mySwiper = new Swiper('.swiper-container', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  },
-  
-  scrollbar: {
-      el: '.swiper-scrollbar',
   }
+  
 })

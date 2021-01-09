@@ -74,7 +74,7 @@ body {
 .h1_cont{
   position: absolute;
   z-index: 1;
-  top: 12vh;
+  top: 250px;
   left: 10%;
   right: 10%;
   max-width: 1180px;
@@ -94,7 +94,6 @@ body {
 
 .header__subtitle {
     text-align: center;
-    font-family: 'Arimo', sans-serif;
     font-size: 1.375em;
     line-height: 1.125em;
     font-weight: 400;
@@ -118,7 +117,7 @@ body {
 .footer__logo span,
 .header__logo span {
     font-family: Pacifico;
-    font-size: 40px;
+    font-size: 2.5em;
     line-height: 18px;
     font-weight: 400;
     color: #ffffff;
@@ -172,7 +171,7 @@ body {
   height: 65px;
   border-radius: 50%;
   margin-right: 35px;
-  font-size: 65px;
+  font-size: 4.0625em;
   color: rgba(255, 255, 255, .65);
   
 }
@@ -221,7 +220,7 @@ swiper-button-prev:hover,
 .full-width__one {
     background-color: #fefefe;
     width: 100vw;
-    min-height: 580px;
+    min-height: 450px;
 }
 
 .container_one {
@@ -254,7 +253,6 @@ swiper-button-prev:hover,
 
 .container_two {
     max-width: 1180px;
-    padding: 60px 0;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -265,6 +263,7 @@ swiper-button-prev:hover,
 
 .container_two div {
     width: 350px;
+    padding: 30px 0 30px 0;
     text-align: center;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 33%;
@@ -420,7 +419,7 @@ swiper-button-prev:hover,
 .icon-twitter,
 .icon-facebook,
 .icon-vk{
-    font-size: 30px;
+    font-size: 1.875em;
     color: #999;
     
 }
@@ -559,16 +558,21 @@ swiper-button-prev:hover,
     .swiper-button-next {
       width: 60px;
       height: 60px;
-    }
-    .swiper-button-prev svg,
-    .swiper-button-next svg{
-      width: 60px;
-      height: 60px;
+      font-size: 3.75em;
     }
     .swiper-button-next,
     .swiper-button-prev{
       margin: 0;
     }
+     .swiper-pagination-bullet {
+       width: 10px;
+       height: 10px;
+     }
+    
+    .main_block {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 29%;
+      flex: 1 1 29%;
 }
 
 @media screen and (max-width: 780px) {
@@ -581,6 +585,10 @@ swiper-button-prev:hover,
     .swiper-button-prev,
     .swiper-button-next{
       z-index: -1;
+    }
+    .swiper-pagination-bullet{
+      width: 8px;
+      height: 8px;
     }
     .header__menu {
         width: 100vw;
@@ -598,6 +606,14 @@ swiper-button-prev:hover,
         -o-transition: .6s ease-in-out;
         transition: .6s ease-in-out;
         z-index: 1;
+    }
+    .h1_cont {
+      position: absolute;
+      z-index: 1;
+      top: 140px;
+      left: 10%;
+      right: 10%;
+      max-width: 1180px;
     }
     .drop_menu {
         -webkit-box-orient: vertical;
