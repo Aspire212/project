@@ -1,0 +1,18 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Arimo&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+
+font-family: 'Arimo', sans-serif;       -     подзогаловки + текст
+font-family: 'Source Sans Pro', sans-serif;   - хеадер + заголовки
+#2733A0   -  цвет фона
+
+
+
+
+
+1. Доделать дроп меню качественно!
+понять почему сдвиг на 40px!!!!!!!!!!!
+
+2.wraperr стилизовать!!!!1
+
+
