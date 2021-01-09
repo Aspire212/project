@@ -1,20 +1,23 @@
 
-//-----------------------------BURGER--------------------------------
+/*-----------------------------BURGER--------------------------------*/
 
-const burgertn = document.querySelector('.burger');
+const burgerBtn = document.querySelector('.burger');
 const strips = document.querySelector('.strips');
 const dropMenu = document.querySelector('.header__menu');
 const body = document.querySelector('body');
 
-burgertn.addEventListener('click', function() {
-    strips.classList.toggle('strips_active');
-    dropMenu.classList.toggle('menu_active');
-    body.classList.add('body__lock')
+burgerBtn.addEventListener('click', burger);
 
-    if (strips.classList.contains('strips_active') == false) {
-        body.classList.remove('body__lock');
-    }
-})
+function burger() {
+  strips.classList.toggle('strips_active');
+  dropMenu.classList.toggle('menu_active');
+  body.classList.add('body__lock')
+
+  if (strips.classList.contains('strips_active') == false) {
+    body.classList.remove('body__lock');
+  }
+}
+
 
 /*----------Swiper js----------*/
 
@@ -25,7 +28,6 @@ var mySwiper = new Swiper('.swiper-container', {
   effect: 'slide',
   updateOnWindowResize: true,
   roundLengths: true,
-
   speed: 400,
   autoplay:{delay: 4000,
     disableOnInteraction: false,
