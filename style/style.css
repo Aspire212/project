@@ -97,8 +97,8 @@
                                         
                                         body {
                                             background-color: #3a59af;
-                                            overflow-x: hidden;
                                             position: relative;
+                                            overflow-x: hidden;
                                             font-size: 16px;
                                         }
                                         
@@ -340,7 +340,7 @@
                                             background-color: #fefefe;
                                             width: 100vw;
                                             min-height: 450px;
-                                            padding: 60px 0;
+                                            padding: 60px 30px;
                                         }
                                         
                                         .container_one {
@@ -408,7 +408,7 @@
                                             width: 100vw;
                                             min-height: 400px;
                                             background: #efefef;
-                                            padding: 60px 0;
+                                            padding: 60px 30px;
                                         }
                                         
                                         .container_three {
@@ -441,9 +441,9 @@
                                         
                                         .main_block {
                                             width: 350px;
-                                            display: flex;
+                                            /*display: flex;
                                             flex-direction: column;
-                                            align-items: center;
+                                            align-items: center;*/
                                         }
                                         
                                         .container_three .circle1,
@@ -484,7 +484,7 @@
                                             width: 100vw;
                                             min-height: 400px;
                                             background-color: #fefefe;
-                                            padding: 60px 0;
+                                            padding: 60px 30px;
                                         }
                                         
                                         .container_five {
@@ -521,7 +521,7 @@
                                             width: 100vw;
                                             min-height: 360px;
                                             background-color: #333333;
-                                            padding: 60px 0 0 0;
+                                            padding: 60px 30px 0 30px;
                                         }
                                         
                                         .footer_container {
@@ -647,6 +647,7 @@
                                             text-transform: uppercase;
                                             color: #fefefe;
                                         }
+                                      
                                         /*---------------------------MEDIA-------------------------*/
                                         
                                         @media screen and (max-width: 1180px) {
@@ -670,20 +671,20 @@
                                                 -ms-flex-wrap: wrap;
                                                 flex-wrap: wrap;
                                             }
-                                            .swiper-button-prev,
-                                            .swiper-button-next {
+                                            .prev,
+                                            .next {
                                                 width: 60px;
                                                 height: 60px;
                                                 font-size: 3.75em;
                                             }
-                                            .swiper-button-next,
-                                            .swiper-button-prev {
-                                                margin: 0;
+                                            .next{
+                                               right: 20px; 
                                             }
-                                            .swiper-pagination-bullet {
-                                                width: 10px;
-                                                height: 10px;
+                                            .prev {
+                                               left: 20px;
                                             }
+                                        }
+
                                             
                                             @media screen and (max-width: 930px){
                                                 .main_block:last-child{
@@ -701,21 +702,18 @@
                                                      flex: 0 1 100%;
                                                  }
                                             }
-                                            @media screen and (max-width: 780px) {
+                                            @media screen and (max-width: 800px) {
                                                 .wrapper__header {
                                                     height: 400px;
                                                 }
-                                                .swiper-container {
+                                                .wrapper,
+                                                .slides {
                                                     height: 400px;
                                                 }
-                                                .swiper-button-prev,
-                                                .swiper-button-next {
-                                                    z-index: -1;
+                                                .slide{
+                                                    height: 400px;
                                                 }
-                                                .swiper-pagination-bullet {
-                                                    width: 8px;
-                                                    height: 8px;
-                                                }
+                                               
                                                 .header__menu {
                                                     width: 100vw;
                                                     height: 100vh;
@@ -737,10 +735,12 @@
                                                     position: absolute;
                                                     z-index: 1;
                                                     top: 140px;
-                                                    left: 10%;
-                                                    right: 10%;
+                                                    left: 50%;
+    
+                                                    transform: translateX(-50%);
                                                     max-width: 1180px;
                                                 }
+                                               
                                                 .drop_menu {
                                                     -webkit-box-orient: vertical;
                                                     -webkit-box-direction: normal;
@@ -751,12 +751,12 @@
                                                     align-items: center;
                                                     -webkit-box-pack: justify;
                                                     -ms-flex-pack: justify;
-                                                    justify-content: space-between;
-                                                    height: 40%;
+                                                    justify-content: space-evenly;
+                                                    height: 100%;
                                                     font-size: 30px;
                                                 }
                                                 .drop_menu li {
-                                                    margin: 30px auto;
+                                                    margin: 0px auto;
                                                 }
                                                 .container__title {
                                                     top: 0px;
@@ -764,12 +764,14 @@
                                                 .header__title {
                                                     text-align: center;
                                                     height: 30px;
+                                                    
                                                     text-transform: uppercase;
                                                     font-family: 'Source Sans Pro', sans-serif;
                                                     font-size: 1.75em;
-                                                    line-height: 1.5em;
+                                                    line-height: 1em;
                                                     font-weight: 600;
                                                     color: #ffffff;
+                                                    padding-bottom: 50px;
                                                 }
                                                 .header__subtitle {
                                                     text-align: center;
@@ -894,7 +896,7 @@
                                                     padding-bottom: 30px;
                                                 }
                                                 .full-width__one {
-                                                    margin-top: 40px;
+                                                    margin-top: 0px;
                                                 }
                                                 .container_two .container_three {
                                                     -webkit-box-orient: vertical;
@@ -927,4 +929,6 @@
                                                     -ms-flex-order: 2;
                                                     order: 2;
                                                 }
-                                            }
+                                             }
+                                            
+                                      
