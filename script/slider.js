@@ -1,4 +1,5 @@
-/*--------------------SLIDER FADE------------------*/
+function fadePicture(){
+    /*--------------------SLIDER FADE------------------*/
 const click = document.querySelector('.wrapper');
 const slide = document.querySelectorAll('.slide');
 const doted = document.querySelector('.doted');
@@ -52,7 +53,9 @@ function slider(event) {
     }
 }
 
-/*FUNCTION*/
+/*--------------------------------FUNCTION---------------------------------------*/
+
+
 /*function removeSlideActive() {
     slide.forEach(elem => {
         elem.classList.remove('slide_active');
@@ -119,3 +122,7 @@ function colorDoted() {
         }
     }
 }
+}
+
+fadePicture();
+

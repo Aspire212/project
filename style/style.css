@@ -114,6 +114,9 @@
                                             margin: 0 auto;
                                             z-index: 2;
                                         }
+                                        .header_social a{
+                                            margin-left: 6px;
+                                        }
                                         
                                         .container__title {
                                             width: 100vw;
@@ -164,6 +167,8 @@
                                         
                                         .header__logo {
                                             padding: 40px 0 35px 0;
+                                            display: flex;
+                                            justify-content: space-between;
                                         }
                                         
                                         .footer__logo span,
@@ -414,14 +419,20 @@
                                         .container_three {
                                             max-width: 1180px;
                                             margin: 0 auto;
+                                            padding-top: 30px;
                                             display: -webkit-box;
                                             display: -ms-flexbox;
                                             display: flex;
                                             -ms-flex-pack: distribute;
                                             justify-content: space-around;
-                                            align-items: center;
                                         }
-                                        
+                                        .container_three .main_block {
+                                            width: 350px;
+                                            text-align: center;
+                                            -webkit-box-flex: 1;
+                                            -ms-flex: 1 1 350px;
+                                            flex: 1 1 350px;
+                                        }
                                         
                                         .container_h2 {
                                             max-width: 1180px;
@@ -441,9 +452,17 @@
                                         
                                         .main_block {
                                             width: 350px;
-                                            /*display: flex;
-                                            flex-direction: column;
-                                            align-items: center;*/
+                                            min-height: 400px;
+                                            display: -webkit-box;
+                                            display: -ms-flexbox;
+                                            display: flex;
+                                            -webkit-box-orient: vertical;
+                                            -webkit-box-direction: normal;
+                                                -ms-flex-direction: column;
+                                                    flex-direction: column;
+                                            -webkit-box-align: center;
+                                                -ms-flex-align: center;
+                                                    align-items: center;
                                         }
                                         
                                         .container_three .circle1,
@@ -465,19 +484,15 @@
                                         }
                                         
                                         .main_block .circle1 {
-                                            background: url(../img/main1.jpg);
+                                            background: url(../img/main1.jpg) center / cover no-repeat;
                                         }
                                         
                                         .main_block .circle2 {
-                                            background: url(../img/main2.jpg);
+                                            background: url(../img/main2.jpg) center / cover no-repeat;
                                         }
                                         
                                         .main_block .circle3 {
-                                            background: url(../img/main3.jpg);
-                                        }
-                                        
-                                        .container_three {
-                                            padding-bottom: 30px;
+                                            background: url(../img/main3.jpg) center / cover no-repeat;
                                         }
                                         
                                         .full-width__three {
@@ -585,7 +600,7 @@
                                         }
                                         
                                         .column_two {
-                                            margin: 30px auto;
+                                            margin: 0 auto;
                                             margin: 0;
                                             padding: 0;
                                         }
@@ -660,6 +675,9 @@
                                             .header__logo {
                                                 margin-left: 5px;
                                             }
+                                            .header_social{
+                                                margin-right: 5px;
+                                            }
                                             .container_h2,
                                             .container_one,
                                             .container_two,
@@ -671,6 +689,7 @@
                                                 -ms-flex-wrap: wrap;
                                                 flex-wrap: wrap;
                                             }
+                                           
                                             .prev,
                                             .next {
                                                 width: 60px;
@@ -687,24 +706,38 @@
 
                                             
                                             @media screen and (max-width: 930px){
-                                                .main_block:last-child{
-                                                    padding: 30px 0 0 0;
-                                    
+                                                .main_block{
+                                                    padding-bottom: 30px;
                                                 }
+                                                .main_block p:last-child{
+                                                    padding-bottom: 0px;
+                                                }
+                                                .container_two,
                                                 .container_three{
                                                     flex-direction: column;
+                                                    align-items: center;
                                                 }
-                                                .main_block
+                                                .container_three div{
+                                                    width: 100%;
+                                                }
+                                                .container_three .main_block
                                                 {
                                                     width: 100%;
                                                      -webkit-box-flex: 1;
                                                      -ms-flex: 0 1 100%;
-                                                     flex: 0 1 100%;
+                                                     flex: 1 1 100%;
                                                  }
+                                                 .main_block p{
+                                                    width: 100%;
+                                                }
+                                                
                                             }
                                             @media screen and (max-width: 800px) {
                                                 .wrapper__header {
                                                     height: 400px;
+                                                }
+                                                .header_social{
+                                                  display: none;
                                                 }
                                                 .wrapper,
                                                 .slides {
