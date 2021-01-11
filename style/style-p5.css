@@ -96,6 +96,13 @@
 															-o-transition: all 0.1s linear;
 															transition: all 0.1s linear;
 													  }
+													  * a:focus{
+														text-shadow: 0 0 3px  #3a59af;
+														box-shadow: 0 0 3px #3a59af;
+														border: 1px solid #3a59af;
+														border-radius: 5px;
+														padding: 5px;		
+													 }
 													  
 													  body {
 															background-color: #3a59af;

@@ -96,6 +96,13 @@
 															-o-transition: all 0.1s linear;
 															transition: all 0.1s linear;
 													  }
+													    * a:focus{
+														text-shadow: 0 0 3px  #3a59af;
+														box-shadow: 0 0 3px #3a59af;
+														border: 1px solid #3a59af;
+														border-radius: 5px;
+														padding: 5px;		
+													 }
 													  
 													  body {
 															background-color: #3a59af;
@@ -106,7 +113,7 @@
 													  
 													  .wrapper__header {
 															width: 100vw;
-															height: 600px;
+															
 															color: rgba(255, 255, 255, 0.7);
 															background-color: #fefefe;
 													  }
@@ -334,6 +341,202 @@
 
 
 
+												/*----------------------page2-------------*/
+												.container-wrapper {
+														width: 100vw;
+												}
+												.container-wrapper_bg {
+													background: url(../img/photo3.jpg) top center no-repeat;
+													height: 100px;;
+												}
+												.container-center {
+													max-width: 1180px;
+													margin: 0 auto;
+												}
+												.container-center__title {
+													height: 100px;
+													font-family: 'Source Sans Pro', sans-serif;
+													font-size: 2.25em;
+													line-height: 1.125em;
+													font-weight: 600;
+													color: #fefefe;
+													display: flex;
+													align-items: center;									
+												}
+
+
+												.container-center__h2 {
+													font-family: 'Source Sans Pro', sans-serif;
+													font-size: 1.375em;
+													line-height: 1.5em;
+													font-weight: 600;
+													color: #5f5b5b;
+													text-align: center;
+													padding: 60px 2px 30px 2px; 
+												}
+												.container-title__text {
+													font-family: 'Arimo', sans-serif;
+													font-size: 1em;
+													line-height: 1.5em;
+													font-weight: 400;
+													color: #8f8f8f;
+													text-align: center;
+													padding: 0px 2px 60px 2px; 
+													border-bottom: 1px solid #c2c2c2;
+												}
+												.container-wrapper__white{
+													background-color: #fefefe;
+												}
+												
+												textarea{
+													background-color: blue;
+												}
+
+
+												.container-center__flex {
+													display: flex;
+													padding: 60px 2px;
+													border-bottom: 1px solid #c2c2c2;
+												}
+												.flex-form {
+													min-width: 735px;
+												}
+											
+												.flex-info h2,
+												.flex-form_title {
+													font-family: 'Source Sans Pro', sans-serif;
+													font-size: 1.125em;
+													line-height: 1.125em;
+													font-weight: 600;
+													color: #5f5b5b;
+												}
+
+												.contact-text{
+													display: flex;
+													justify-content: space-between;
+													padding-bottom: 30px;
+												}
+												.contact-text li{
+													padding-top: 0;
+												}
+
+												.column-two a{
+													display: block;
+
+												}
+												
+												.flex-info p,
+												.flex-form__text {
+													font-family: 'Arimo', sans-serif;
+													font-size: 1em;
+													line-height: 1.5em;
+													font-weight: 400;
+													color: #8f8f8f;
+													padding: 30px 0 0 0;
+												}
+
+												.column-one li,
+												.column-two  a{
+													font-family: 'Arimo', sans-serif;
+													font-size: 1em;
+													line-height: 1.5em;
+													font-weight: 400;
+													color: #8f8f8f;
+												}
+
+												.column-one li{
+													font-weight: 700;
+												}
+											
+												.form-label h3{
+													font-family: 'Source Sans Pro', sans-serif;
+													font-size: 0.875em;
+													line-height: 1.375em;
+													font-weight: 600;
+													color: #5f5b5b;
+												}
+												.form-label{
+													padding: 30px 0;
+												}
+												.form-label:first-child{
+													padding-top: 0;
+												}
+												.form-label h3 span{
+													color: #e74c3c;
+												}
+
+												.form-label p{
+													font-family: 'Arimo', sans-serif;
+													font-size: 0.875em;
+													line-height: 1.375em;
+													font-weight: 400;
+													color: #8f8f8f;
+													padding: 3px 0;
+												}
+												.form-label input{
+													width: 350px;
+													height: 40px;
+													background-color: #efefef;
+													font-family: 'Arimo', sans-serif;
+													font-size: 0.875em;
+													line-height: 1.375em;
+													font-weight: 600;
+													color: #5f5b5b;
+													padding: 0 5px;
+												}
+												
+												.form-label textarea{
+													width: 655px;
+													height: 300px;
+													background-color: #efefef;
+													font-family: 'Arimo', sans-serif;
+													font-size: 0.875em;
+													line-height: 1.375em;
+													font-weight: 600;
+													color: #5f5b5b;
+													padding: 0 5px;
+												}
+												.form-btn:focus,
+												.form-label textarea:focus,
+												.form-label input:focus{
+													box-shadow: 0 0 5px  #3a59af;
+												}
+
+												.form-btn{
+													width: 140px;
+													height: 40px;
+													background-color: #3a59af;
+													font-family: 'Source Sans Pro', sans-serif;
+													font-size: 1.125em;
+													line-height: 1.25em;
+													font-weight: 600;
+													text-transform: uppercase;
+													color: #ffffff;
+												}
+
+												.form-btn:hover{
+													color: rgb(255, 255, 0);
+												}
+
+												.form-btn:active{
+													transform: scale(1.2);
+													box-shadow: 0 0 4px rgb(255, 255, 0);
+													text-shadow: 0 0 4px rgb(255, 255, 0);
+												}
+												.contact_title{
+													padding: 30px 0;
+												}
+
+												
+
+												.flex-info {
+													display: flex;
+													flex-direction: column;
+												}
+												
+
+
+
 												  @media screen and (max-width: 1180px) {
 													.header__menu {
 														 margin-left: 5px;
@@ -342,8 +545,10 @@
 														 max-width: 1180px;
 													}
 													.header__logo {
-														 margin-left: 5px;
+														 padding-left: 5px;
+														 
 													}
+													
 													.header_social{
 														 margin-right: 5px;
 														          
@@ -354,12 +559,16 @@
                                                 -ms-flex-wrap: wrap;
 																flex-wrap: wrap;
 																padding: 0 5px;
-                                            }
+														  }
+														  .container-center{
+															  width: 100%;
+															  padding: 0 10px;
+														  }
                                            
 													}
 
                                             
-														@media screen and (max-width: 930px){
+														@media screen and (max-width: 960px){
 															.column_one,
 															.column_two,
 															.column_three{
@@ -369,6 +578,19 @@
 															.one_info{
 																 width: 100%;
 															}
+															.form-label textarea{
+																width: 100%;
+															}
+															.container-center__flex{
+																flex-direction: column-reverse;
+															}
+															.flex-info__contact{
+																width: 70%;
+															}
+															.form-label input{
+																width: 55%;
+															}
+															
 															
 													  }
 													  @media screen and (max-width: 800px) {
@@ -376,7 +598,9 @@
 															display: none;
 														 }
 														
-														
+														.header__logo span{
+														color: rgb(255, 255, 0);
+													}		
 														 .header__menu {
 															  width: 100vw;
 															  height: 100vh;
@@ -525,5 +749,17 @@
 												 -webkit-box-ordinal-group: 3;
 												 -ms-flex-order: 2;
 												 order: 2;
+											}
+
+
+
+
+
+											.flex-info__contact{
+												width: 90%;
+											}
+											.form-label,
+											.form-label input{
+												width: 95vw;
 											}
 														}

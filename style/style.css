@@ -96,7 +96,14 @@
                                             -o-transition: all 0.1s linear;
                                             transition: all 0.1s linear;
                                         }
-                                        
+
+                                        * a:focus{
+                                            text-shadow: 0 0 3px  #3a59af;
+                                            box-shadow: 0 0 3px #3a59af;
+                                            border: 1px solid rgb(255, 255, 0);
+                                            border-radius: 5px;
+                                            padding: 5px;		
+                                          }
                                         body {
                                             background-color: #3a59af;
                                             position: relative;
@@ -513,9 +520,10 @@
                                         .container_five {
                                             max-width: 1180px;
                                             margin: 0 auto;
-                                            padding-bottom: 30px;
+                                        
                                             border-bottom: 1px solid #cccccc;
                                         }
+
                                         
                                         .container_five h2 {
                                             font-family: 'Source Sans Pro', sans-serif;
@@ -537,7 +545,7 @@
                                         }
                                         
                                         .container_five p:last-child {
-                                            padding-bottom: 0px;
+                                            padding-bottom: 30px;
                                         }
                                         
                                         .footer {
@@ -726,9 +734,10 @@
                                                 .main_block{
                                                     padding-bottom: 30px;
                                                 }
-                                                .main_block p:last-child{
+                                                .main_block:last-child{
                                                     padding-bottom: 0px;
                                                 }
+                                               
                                                 .container_two,
                                                 .container_three{
                                                     flex-direction: column;
@@ -977,6 +986,9 @@
                                                 }
                                                 .main_block p {
                                                     padding-bottom: 30px;
+                                                }
+                                                .main_block p:last-child {
+                                                    padding-bottom: 0;
                                                 }
                                                 .container_one {
                                                     margin-top: -20px;
