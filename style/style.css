@@ -390,8 +390,8 @@
                                             min-width: 350px;
                                             text-align: center;
                                             -webkit-box-flex: 1;
-                                            -ms-flex: 1 1 350px;
-                                            flex: 1 1 350px;
+                                            -ms-flex: 1 1 auto;
+                                            flex: 1 1 auto;
                                         }
                                         
                                         .container_two img {
@@ -400,7 +400,8 @@
                                         }
                                         
                                         .container_two p {
-                                            padding-top: 30px;
+                                            padding: 30px 2px 0 2px;
+
                                             text-align: center;
                                             font-family: 'Arimo', sans-serif;
                                             font-size: 1em;
@@ -430,8 +431,8 @@
                                             width: 350px;
                                             text-align: center;
                                             -webkit-box-flex: 1;
-                                            -ms-flex: 1 1 350px;
-                                            flex: 1 1 350px;
+                                            -ms-flex: 1 1 auto;
+                                            flex: 1 1 auto;
                                         }
                                         
                                         .container_h2 {
@@ -478,9 +479,11 @@
                                         .main_block p {
                                             font-family: 'Arimo', sans-serif;
                                             font-size: 1em;
+                                            padding: 0 2px;
                                             line-height: 1.5em;
                                             font-weight: 400;
                                             color: #9b9999;
+                                            width: 350px;
                                         }
                                         
                                         .main_block .circle1 {
@@ -525,7 +528,7 @@
                                             line-height: 1.5em;
                                             font-weight: 400;
                                             color: #9b9999;
-                                            padding-bottom: 60px;
+                                            padding: 0 2px 60px 2px;
                                         }
                                         
                                         .container_five p:last-child {
@@ -702,6 +705,8 @@
                                             .prev {
                                                left: 20px;
                                             }
+
+                                            
                                         }
 
                                             
@@ -724,10 +729,19 @@
                                                 {
                                                     width: 100%;
                                                      -webkit-box-flex: 1;
-                                                     -ms-flex: 0 1 100%;
+                                                     -ms-flex: 1 1 100%;
                                                      flex: 1 1 100%;
                                                  }
                                                  .main_block p{
+                                                    width: 100%;
+                                                }
+                                                .column_one,
+                                                .column_two,
+                                                .column_three{
+                                                   min-width: 100%;
+                                                    flex: 1 1 auto;
+                                                }
+                                                .one_info{
                                                     width: 100%;
                                                 }
                                                 
