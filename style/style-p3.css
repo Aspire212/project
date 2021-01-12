@@ -161,7 +161,9 @@
 															justify-content: space-between;
 													  }
 
-
+													  .header_social a{
+														margin-left: 6px;
+												  }
 
 													  
 													  .footer__logo span,

@@ -162,7 +162,9 @@
 													  }
 
 
-
+													  .header_social a{
+														margin-left: 6px;
+												  }
 													  
 													  .footer__logo span,
 													  .header__logo span {
