@@ -1,3 +1,5 @@
+window.addEventListener("DOMContentLoaded", function(){
+
 function fadePicture(){
     /*--------------------SLIDER FADE------------------*/
 const click = document.querySelector('.wrapper');
@@ -123,6 +125,5 @@ function colorDoted() {
     }
 }
 }
-
 fadePicture();
-
+})

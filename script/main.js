@@ -1,3 +1,4 @@
+window.addEventListener("DOMContentLoaded", function(){
 /*-----------------------------BURGER--------------------------------*/
 const burgerBtn = document.querySelector('.burger');
 const strips = document.querySelector('.strips');
@@ -16,3 +17,5 @@ function eBurger(){
         body.classList.remove('body__lock');
     }
 }
+
+});
