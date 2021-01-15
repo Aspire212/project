@@ -633,15 +633,12 @@ border-bottom: 1px solid #cccccc;
 	color: #fff;
 }
 .instructors:hover{
+	transform-origin: center;
 	transform: rotate3d(0, 1, 0, 180deg);
 }
-.shadow{
-	height: 100%;
-	width: 100%;
-	background: rgba(0, 0, 0, 0.3);
-}
-.one .front,
-.one .rear{
+
+ .one .front,
+ .rear{
 	color: #fff;
 	background: url(../img/andrew.jpg) center / cover no-repeat;;
 }
