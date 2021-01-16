@@ -593,23 +593,31 @@ line-height: 1.5em;
 font-weight: 600;
 color: #5f5b5b;
 text-align: center;
-padding: 60px 2px ; 
+padding: 60px 0; 
 border-bottom: 1px solid #cccccc;
 }
 .instructors {
 	max-width: 30%;
+	padding: 0;
 	position: relative;
 	transition: transform 1.5s;
 	transform-style: preserve-3d;
 
 }
-
+.shadow-rear{
+  background: rgba(0, 0, 0, 0.6);
+}
+.shadow-front{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
 .instructors h3{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 1.125em;
 	line-height: 1.125em;
 	font-weight: 600;
-	color: #5f5b5b;
+	color: #fff;
 	padding: 30px 0;
 	text-align: center;
 }
@@ -619,7 +627,7 @@ border-bottom: 1px solid #cccccc;
 	font-size: 1em;
 	line-height: 1.5em;
 	font-weight: 400;
-	color: #8f8f8f;
+	color: #fff;
 	
 
 }
@@ -630,7 +638,10 @@ border-bottom: 1px solid #cccccc;
 	top: 0;
 	left: 0;
 	backface-visibility: hidden;
-	color: #fff;
+}
+.rear{
+  width: 100%;
+  height: 100%;
 }
 .instructors:hover{
 	transform-origin: center;
@@ -638,19 +649,24 @@ border-bottom: 1px solid #cccccc;
 }
 
  .one .front,
- .rear{
-	color: #fff;
-	background: url(../img/andrew.jpg) center / cover no-repeat;;
+ .one .rear{
+	background: url(../img/andrew.jpg) center / cover no-repeat;
 }
+ .two .front,
+ .two .rear{
+	background: url(../img/igor.jpg) center / cover no-repeat;
+}
+ .three .front,
+ .three .rear{
+	background: url(../img/vera.jpg) center / cover no-repeat;
+}
+
+
 .rear {
 	padding: 0 15px ;
 	transform: rotateY(180deg);
 	backface-visibility: hidden;
 	
-}
-.two {
-}
-.three {
 }
 
 @media screen and (max-width: 1180px) {
@@ -891,4 +907,15 @@ width: 90%;
 width: 95vw;
 }
 
+/*page4*/
+
+.container-center__instructor{
+  flex-direction: column;
+}
+.instructors{
+  min-width: 100%
+}
+.instructors{
+  margin-bottom: 30px;
+}
 }
