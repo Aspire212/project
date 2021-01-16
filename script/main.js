@@ -13,7 +13,7 @@ function eBurger(){
     dropMenu.classList.toggle('menu_active');
     body.classList.add('body__lock')
 
-    if (strips.classList.contains('strips_active') == false) {
+    if (!strips.classList.contains('strips_active')) {
         body.classList.remove('body__lock');
     }
 }
