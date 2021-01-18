@@ -135,6 +135,7 @@ body {
 	position: relative;
 	overflow-x: hidden;
 	font-size: 16px;
+	width: 100vw;
 }
 
 .wrapper__header {
