@@ -139,7 +139,7 @@ body {
 }
 
 .drop_menu li a:hover {
-	text-shadow: 0 0 7px #664ae7;
+	text-shadow: 0 0 7px #3a59af;
 }
 
 .header {
@@ -227,7 +227,7 @@ body {
 }
 
 .header__menu li span a {
-	color: #664ae7;
+	color:#3a59af;
 }
 
 .footer {
@@ -259,7 +259,7 @@ body {
 .icon-twitter:hover,
 .icon-vk:hover,
 .icon-facebook:hover {
-	color: #664ae7;
+	color: #3a59af;
 }
 
 .icon-twitter:active,
@@ -329,11 +329,11 @@ body {
 }
 
 .column_three span a {
-	color: #664ae7;
+	color: #3a59af;
 }
 
 .column_three a:hover {
-	text-shadow: 0 0 7px#664ae7;
+	text-shadow: 0 0 7px #3a59af;
 }
 
 .footer_last {
@@ -366,10 +366,10 @@ body {
 	width: 100vw;
 }
 
-.container-wrapper_bg {
-	background: #664ae7 url(../img/photo3.jpg) top center no-repeat;
+.container-wrapper__bg {
+	background: #3a59af url(../img/photo2.jpg) bottom center no-repeat;
 	height: 100px;
-	;
+	padding: 45px 0;
 }
 
 .container-center {
@@ -579,6 +579,8 @@ body {
 	flex-direction: column;
 	min-width: 20%;
 }
+
+
 
 
 /*-------------PAGE4-----------------*/
@@ -833,6 +835,34 @@ body {
 
 /*крошки*/
 
+.breadcrumbs{
+width: 100%;
+ overflow: hidden;
+
+ }
+ .breadcrumbs li{
+	 display: inline;
+	 padding: 10px;
+	 color: #ffffff;
+ }
+ .breadcrumbs a{
+	font-family: 'Arimo', sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	font-weight: 400;
+	color: #ffffff;
+ }
+
+.breadcrumbs a:hover{
+  color: #ffff00;
+  }
+.breadcrumbs .current,
+.breadcrumbs .current:hover{
+font-weight: bold;
+pointer-events: none;
+cursor: default;  
+color: #999; 
+}
 @media screen and (max-width: 1180px) {
 	.header__menu {
 		margin-left: 5px;
@@ -855,7 +885,7 @@ body {
 	}
 	.container-center {
 		width: 100%;
-		padding: 0 15px;
+		padding: 0 5px;
 	}
 }
 
@@ -895,6 +925,9 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+	.container-center{
+		padding: 0 15px;
+	}
 	.header_social {
 		display: none;
 	}
@@ -1053,7 +1086,9 @@ body {
 	}
 	.form-label,
 	.form-label input {
-		width: 95vw;
+		width: 92vw;
+		padding-left: 0;
+		padding-right: 0;
 	}
 	/*page4*/
 	.container-center__instructor {
@@ -1072,4 +1107,3 @@ body {
 		margin-bottom: 30px;
 	}
 }
-COPY TO CLIPBOARD SE

@@ -240,7 +240,7 @@ body {
 }
 
 .header__menu li span a {
-	color: #664ae7;
+	color: #3a59af;
 }
 
 .footer {
@@ -272,7 +272,7 @@ body {
 .icon-twitter:hover,
 .icon-vk:hover,
 .icon-facebook:hover {
-	color: #664ae7;
+	color:#3a59af;
 }
 
 .icon-twitter:active,
@@ -342,11 +342,11 @@ body {
 }
 
 .column_three span a {
-	color: #664ae7;
+	color:#3a59af;
 }
 
 .column_three a:hover {
-	text-shadow: 0 0 7px#664ae7;
+	text-shadow: 0 0 7px#3a59af;
 }
 
 .footer_last {
@@ -380,9 +380,10 @@ body {
 	width: 100vw;
 }
 
-.container-wrapper_bg {
-	background:  #664ae7 url(../img/photo3.jpg) top center no-repeat;
+.container-wrapper__bg {
+	background: #3a59af url(../img/photo2.jpg) bottom center no-repeat;
 	height: 100px;
+	padding: 45px 0;
 }
 
 .container-center {
@@ -524,7 +525,7 @@ body {
 .right-btn {
 	width: 140px;
 	height: 40px;
-	background-color: #664ae7;
+	background-color: #3a59af;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 1.125em;
 	line-height: 1.25em;
@@ -532,8 +533,27 @@ body {
 	text-transform: uppercase;
 	margin-top: 30px;
 }
-.right-btn a:hover{
-	color: #ffff00;
+.right-btn:hover a{
+	animation: textColor 3s infinite;
+}
+
+@keyframes textColor{
+	0% {
+		color: #ffff00;
+		text-shadow: 0 0 3px rgba(0, 0, 255, 0.2);
+	}
+	33% {
+		color: #15c515;
+		text-shadow: 0 0 3p rgba(0, 100, 100, 0.2);
+	}
+	66% {
+		color: #b1ee57;
+		text-shadow: 0 0 3p rgba(0, 250, 0, 0.2);
+	}
+	100% {
+		color: #f8f82d;
+		text-shadow: 0 0 3px rgba(0, 0, 255, 0.2);
+	}
 }
 
 .right-btn a {
@@ -541,7 +561,9 @@ body {
 }
 .container-flex__level{
 	display: flex; 
-	padding-top: 30px;
+}
+.container-padding{
+	padding-bottom: 30px;
 }
 .container-flex__level:last-child{
 	padding-bottom: 30px;
@@ -551,24 +573,14 @@ body {
 	display: flex;
 	align-items: center;
 }
-.circle {
-	display: flex;
-	justify-content: center;
-	align-items: baseline;
-	height: 100%;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 6.25em;
-	line-height: 1.5em;
-	font-weight: 600;
-	color: #fff;
-}
+
 .level-trainimg__text h3{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 1em;
 	line-height: 1.5em;
 	font-weight: 600;
 	color: #fff;
-	padding: 0 0 30px 15px;
+	padding: 30px 0 30px 15px;
 }
 .level-trainimg__text p{
 	font-family: 'Arimo', sans-serif;
@@ -578,9 +590,39 @@ body {
 	color: #fff;
 	padding-left: 15px;
 }
-.level-training:hover .circle span{
-	color: #664ae7;
+.level-training:hover h3{
+	color: #3a59af;
 }
+/*крошки*/
+
+.breadcrumbs{
+	width: 100%;
+	 overflow: hidden;
+	
+	 }
+	 .breadcrumbs li{
+		 display: inline;
+		 padding: 10px;
+		 color: #ffffff;
+	 }
+	 .breadcrumbs a{
+		font-family: 'Arimo', sans-serif;
+		font-size: 1em;
+		line-height: 1.5em;
+		font-weight: 400;
+		color: #ffffff;
+	 }
+	 .breadcrumbs a:hover{
+		color: #ffff00;
+		}
+  .breadcrumbs .current,
+  .breadcrumbs .current:hover{
+  font-weight: bold;
+	pointer-events: none;
+	cursor: default;  
+	color: #999; 
+   }
+ 
 
 
 
@@ -604,17 +646,18 @@ body {
 		flex-wrap: wrap;
 		padding: 0 5px;
 	}
+
+	
+	
 	.container-center {
 		width: 100%;
-		padding: 0 15px;
+		padding: 0 5px;
 	}
 	.footer{
 		padding-left: 5px;
 		padding-right: 5px;
 	}
-	.container-center{
-		padding: 0 5px;
-	}
+	
 	.container-flex {
 		flex-direction: column;
 	}
@@ -651,6 +694,9 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+	.container-center{
+		padding: 0 15px;
+	}
 	.header_social {
 		display: none;
 	}
@@ -670,6 +716,9 @@ body {
 		-o-transition: .6s ease-in-out;
 		transition: .6s ease-in-out;
 		z-index: 1;
+	}
+	.header__logo span {
+		color: rgb(255, 255, 0);
 	}
 	.drop_menu {
 		-webkit-box-orient: vertical;
