@@ -504,10 +504,11 @@ body {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	width: calc(50%-15px);
+	width: 49%;
 }
 
 .right-flex {
+	width: 49%;
 	padding-left: 15px;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -519,7 +520,7 @@ body {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	width: calc(50%-15px);
+	
 }
 
 .right-btn {
@@ -592,6 +593,20 @@ body {
 }
 .level-training:hover h3{
 	color: #3a59af;
+}
+
+.level-trainimg__text a{
+	font-family: 'Arimo', sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	font-weight: 600;
+	color: #ffff00;
+	padding-left: 15px;
+}
+
+.level-trainimg__text a:hover{
+text-decoration: underline;
+color: #3a59af;
 }
 /*крошки*/
 
@@ -671,6 +686,7 @@ body {
 		width: 100%;
 	}
 	.right-flex{
+		width: 100%;
 		padding-left: 0;
 	}
 	
